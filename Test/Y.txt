@@ -1,0 +1,1 @@
+{'Word Count': 8, 'Character Count (Including Spaces)': 56, 'Character Count (Excluding Spaces)': 49, 'Character Frequency': {'L': 1, 'o': 4, 'r': 3, 'e': 5, 'm': 3, ' ': 7, 'i': 6, 'p': 2, 's': 4, 'u': 2, 'd': 2, 'l': 2, 't': 5, 'a': 2, ',': 1, 'c': 3, 'n': 2, 'g': 1, '.': 1}, 'Paragraph Count': 1}

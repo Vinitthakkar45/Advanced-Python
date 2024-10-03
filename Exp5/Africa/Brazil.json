@@ -1,0 +1,36 @@
+[
+{"country" : "Brazil",
+"date" : "2020-03-26",
+"confirmed_cases" : {"total" : 11000, "new" : 100},
+"deaths" : 50,
+"recovered" : 100
+},
+
+{"country" : "Brazil",
+"date" : "2020-03-27",
+"confirmed_cases" : {"total" : 1100, "new" : 100},
+"deaths" : 60,
+"recovered" : 200
+},
+
+{"country" : "Brazil",
+"date" : "2020-03-28",
+"confirmed_cases" : {"total" : 1200, "new" : 100},
+"deaths" : 70,
+"recovered" : 300
+},
+
+{"country" : "Brazil",
+"date" : "2020-03-29",
+"confirmed_cases" : {"total" : 1300, "new" : 100},
+"deaths" : 80,
+"recovered" : 400
+},
+
+{"country" : "Brazil",
+"date" : "2020-03-30",
+"confirmed_cases" : {"total" : 1400, "new" : 100},
+"deaths" : 90,
+"recovered" : 500
+}
+]

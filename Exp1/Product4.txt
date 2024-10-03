@@ -1,0 +1,59 @@
+CustomerID: CUST031
+ProductID: P3000112233
+ReviewDate: 2023-08-31
+ReviewRating: 34
+ReviewText: Okay product.
+
+CustomerID: CUST032
+ProductID: P3111223344
+ReviewDate: 2023-09-01
+ReviewRating: 4
+ReviewText: Pretty decent.
+
+CustomerID: CUST033
+ProductID: P3222334455
+ReviewDate: 2023-09-02
+ReviewRating: 5
+ReviewText: Highly satisfied!
+
+CustomerID: CUST034
+ProductID: P3222334455
+ReviewDate: 2023-09-03
+ReviewRating: 4
+ReviewText: Could be better.
+
+CustomerID: CUST035
+ProductID: P3444556677
+ReviewDate: 2023-09-04
+ReviewRating: 1
+ReviewText: Very disappointed.
+
+CustomerID: CUST036
+ProductID: P3555667788
+ReviewDate: 2023-09-05
+ReviewRating: 4
+ReviewText: Excellent purchase!
+
+CustomerID: CUST037
+ProductID: P3666778899
+ReviewDate: 2023-09-06
+ReviewRating: 4
+ReviewText: Very nice.
+
+CustomerID: CUST038
+ProductID: P3777889900
+ReviewDate: 2023-09-07
+ReviewRating: 3
+ReviewText: Average.
+
+CustomerID: CUST039
+ProductID: P3888990011
+ReviewDate: 2023-09-08
+ReviewRating: 2
+ReviewText: Not worth the price.
+
+CustomerID: CUST040
+ProductID: P3999001122
+ReviewDate: 2023-09-09
+ReviewRating: 5
+ReviewText: Outstanding product!

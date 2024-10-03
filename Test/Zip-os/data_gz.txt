@@ -1,0 +1,317 @@
+ Check Seat Availability: Given the train ID and the number of tickets requested by a passenger, the program should 
+check if there are enough seats available on the specified train for booking. If seats are available, the booking should
+ be confirmed, and the total fare for the booking should be calculated as per the fare rules (you can define fare rules 
+based on distance, class, etc.).
+ Update Seat Availability: After confirming the booking, the program should update the seat availability for the 
+corresponding train.
+ Generate Reports:
+ Report 1: The program should generate a report showing the details of all the trains, including their names, source 
+stations, destination stations, and the total number of seats available on each train.
+ Report 2: The program should generate a report showing the total revenue earned from each train based on the total 
+number of confirmed bookings and their respective fares.
+ Handle Errors: The program should handle various types of errors gracefully, such as invalid train IDs, invalid 
+passenger names, insufficient seats, etc., and provide appropriate error messages.
+ Note:
+ You can assume that the passenger data in "passengers.csv" will not exceed the available seats on any train. 
+You can design the fare rules based on your preference and mention them clearly in the program.
+ Write the Python program to implement the above functionalities for the railway ticket reservation system. Use 
+comments to explain each step of your implementation and provide sample CSV files ("trains.csv" and 
+"passengers.csv") for testing the program.
+ 6 | P a g e
+Sample data
+Trains.csv
+ Train ID,Train Name,Source Station,Destination Station,Total Seats, Available Seats, Total fare 
+T123,Express 123,City A,City B,200,198,500
+ T456,Superfast 456,City B,City C,150,147,1200
+ T789,Shatabdi 789,City C,City D,100,96,1400 
+T321,Intercity 321,City D,City E,180,179,200 
+T654,Rajdhani 654,City E,City F,250,250,1500
+ Passengers.csv
+ Passenger Name,Train ID,Number of Tickets 
+John,T123,2
+ Alice,T321,1
+ Bob,T789,4 
+Eve,T456,3
+ Output:
+ 7 | P a g e
+Lab Assignment 3 : CSV Manipulation
+ Your task is to write a Python program that reads this CSV file, calculates the average score for each 
+student, and then creates a new CSV file named "student_average_grades.csv”
+ • Steps to Solve
+ 1. Read the data from "student_grades.csv" using CSV file handling in Python.
+ 2. For each student, calculate their average score across all subjects (Maths, Science, and 
+English).
+ 3. Create average functions to calculate the average for each student.
+ 4. Store the student's name and their corresponding average score in a new dictionary.
+ 5. Write the data from the dictionary into a new CSV file named
+ "student_average_grades.csv" with two columns: "Name" and "Average."
+ 8 | P a g e
+Lab Assignment 4 :CSV In depth
+ You are working as a data engineer for a large retail company. Your team is responsible for
+ processing and analyzing sales data from multiple stores across the country. The sales data is stored in
+ CSV files, and each file represents sales data for a specific month and year. Each CSV file has the
+ following columns:
+ • Date (in the format "YYYY-MM-DD")
+ • Store ID (a unique alphanumeric code)
+ • Product ID (a unique alphanumeric code)
+ • Quantity sold (an integer representing the number of products sold on that date)
+ The "product_names.csv" file has two columns: "Product ID" and "Product Name," and it contains 
+the mapping for all products in the sales data.
+ Your task is to write a Python program that performs the following operations:
+ • Read the sales data from all the CSV files in a given directory and its subdirectories.
+ • Calculate the total sales (quantity sold) for each product across all stores and all months.
+ • Determine the top 5 best-selling products in terms of the total quantity sold.
+ Create a new CSV file named "sales_summary.csv" and write the following information into it:
+ • Product ID
+ • Product Name
+ • Total Quantity Sold
+ • Average Quantity Sold per month (considering all months available in the data)
+ Output:
+ 9 | P a g e
+10 | P a g e
+Lab Assignment 5 : JSON Handling
+ You are working as a data scientist for a healthcare organization, and your team has been tasked with
+ analyzing COVID-19 data from multiple countries. The data is stored in JSON files, with each file
+ representing the daily COVID-19 statistics for a specific country. Each JSON file has the following
+ structure:
+ { "country": "Country Name",
+ "date": "YYYY-MM-DD",
+ "confirmed_cases": { "total": 1000, "new": 50 },
+ "deaths": { "total": 20, "new": 2 },
+ "recovered": { "total": 800, "new": 30 }
+ }
+ Your task is to write a Python program that performs the following operations:
+ 1. Read COVID-19 data from all JSON files in a given directory and its subdirectories.
+ 2. Calculate and display the following statistics for each country:
+ 1. Total confirmed cases.
+ 2. Total deaths.
+ 3. Total recovered cases.
+ 4. Total active cases (total confirmed cases minus total deaths and total recovered).
+ 3. Determine the top 5 countries with the highest number of confirmed cases and the lowest 
+number of confirmed cases.
+ 4. Generate a summary report in JSON format that includes the statistics for all countries and 
+save it to a file named "covid19_summary.json".
+ Output:
+ 11 | P a g e
+12 | P a g e
+13 | P a g e
+Lab Assignment 6: Error and Exception Handling
+ You are working on a project to build a custom text processing tool that reads input from various
+ sources, processes the text data, and stores the results in an output file. As part of this project, you
+ need to implement a robust exception handling mechanism to handle potential errors that may arise
+ during the text processing.
+ • The tool needs to perform the following steps:
+ 1. Read the input data from a file specified by the user.
+ 2. Process the text data by performing various operations, such as counting words, calculating 
+character frequencies, and generating word clouds.
+ 3. Store the processed results in an output file.
+ Your task is to design a Python program that incorporates appropriate exception handling to handle the 
+following situations:
+ 1. File Not Found Error: If the user provides an invalid file path or the input file is not found,
+ your program should raise a custom exception FileNotFoundError with a suitable error
+ message.
+ 2. Invalid Input Data: During text processing, if any unexpected input data is encountered (e.g.,
+ non-string values or missing data), your program should raise a custom exception
+ InvalidInputDataError with relevant details.
+ 3. Disk Space Full: If the output file cannot be written due to insufficient disk space, your
+ program should raise a custom exception DiskSpaceFullError
+ Additionally, the program should have the following features:
+  The custom exception classes should inherit from the base Exception class and provide 
+meaningful error messages.
+  Proper logging should be implemented to capture details about the exceptions that occur 
+during text processing.
+  The program should provide a user-friendly interface, allowing the user to enter the input 
+file path and choose the desired text processing operations.
+  The processed results should be stored in an output file with a suitable format (e.g., JSON, 
+CSV, or plain text).
+ Output:
+ 23| P a g e
+23| P a g e
+23| P a g e
+Lab Assignment 7 : Pdf reading creation and editing
+ You are working for a company that sells products online. Your task is to develop a Python program
+ that reads order data from a CSV file, generates individual PDF invoices for each order, and then
+ merges all the PDF invoices into a single PDF file.
+ 1. Load Order Data: The program should read order data from a CSV file named "orders.csv."
+ Each row in the CSV file represents an order with the following information:
+ 1. Order ID (a unique alphanumeric code)
+ 2. Customer Name
+ 3. Product Name
+ 4. Quantity
+ 5. Unit Price
+ 2. Calculate Total Amount: For each order, calculate the total amount by multiplying the 
+quantity with the unit price.
+ Generate PDF Invoices: Create individual PDF invoices for each order. Each invoice should contain the 
+following details:
+ 1. Invoice Number (same as the Order ID)
+ 2. Date of Purchase (current date)
+ 3. Customer Name
+ 4. Product Name
+ 5. Quantity
+ 6. Unit Price
+ 7. Total Amount
+ Output:
+ 23| P a g e
+23| P a g e
+Lab Assignment 8 : User Management Automation
+ You are developing a command-line task management system for a small team of users.
+ User Management:
+ • Implement a user registration system where users can sign up and log in. Store user data in a 
+file, including usernames and hashed passwords.
+ Output:
+ 23| P a g e
+23| P a g e
+ Lab Assignment 9:
+ Image and Audio Data Processing
+ You are tasked with developing a comprehensive Python program that reads and manipulates both 
+image and audio data. The goal is to create a tool that processes images and audio waveforms, 
+allowing users to perform various operations on both types of data. This exercise aims to test your 
+proficiency in handling different data formats and applying appropriate algorithms for manipulation.
+ Part 1: Image Data Processing
+ 1. Image Loading and Display: Your program should allow users to load an image file and 
+display it. Ensure you use an image processing library like Pillow (PIL) to handle image 
+data.
+ 2. Image Manipulation: Implement at least two image manipulation operations, such as:
+ 
+ Applying filters (e.g., Gaussian blur, edge detection).
+ 
+ 
+ 
+ Changing image dimensions or cropping.
+ Adjusting brightness, contrast, or saturation.
+ Converting to grayscale or other color spaces.
+ 3. Histogram Analysis: Implement a feature that calculates and displays histograms for 
+different color channels of the loaded image. Allow users to analyze and manipulate 
+histogram data.
+ Output:
+ 1) Main Image:
+ 23| P a g e
+2) Resized Image:
+ 3) GrayScale:
+ 4) Gaussian Blur:
+ 22 | P a g e
+5) Edge Detection:
+ 6) Graph:
+ 7) Histogram:
+ 23 | P a g e
+Part 2: Audio Data Processing
+ 1. Audio Loading and Visualization: Enable users to load an audio file and visualize its waveform using a suitable 
+library like Matplotlib.
+ 2. Audio Manipulation: Implement at least two audio manipulation operations, such as:
+  Changing the playback speed or pitch.
+  Applying audio effects (e.g., echo, reverb).
+  Clipping or trimming audio segments.
+  Adding silence or noise to the audio.
+ 3. Spectral Analysis: Implement a feature that calculates and displays the spectrogram of the loaded audio. Allow 
+users to analyze and manipulate spectral data.
+ 24 | P a g e
+LAB Assignment 10: Logging engineer
+ Analyze your project to identify potential places for logging involves understanding the application's structure,
+ components, and potential points of interest where capturing information would be beneficial. Here's a systematic
+ approach to help you identify these places:
+ Understand the Application's Purpose and Flow: Familiarize yourself with the application's functionality and
+ objectives. Understand the user interactions, data processing steps, and overall flow of the program.
+ Identify Critical Components and Functions: Identify key components, functions, or methods that play a central
+ role in the application's operation. These might include functions responsible for user input processing, data
+ transformation, database interactions, or external API calls.
+ Identify Decision Points: Look for decision points in the application where different paths or outcomes are possible.
+ These decision points often involve conditionals (if statements, switches, etc.) that determine the application's
+ behaviour.
+ Identify External Interactions: Identify any interactions with external services, APIs, databases, or files. These
+ interactions can provide insights into the data exchange between your application and external entities.
+ Identify Exception Handling: Pay attention to exception handling mechanisms in the application. Whenever an
+ exception is caught, it's often helpful to log information about the exception, its context, and potential reasons for its
+ occurrence.
+ Identify Loops and Iterations: Examine loops and iterations in your application. These might involve processing
+ multiple items or steps in a repetitive manner. Logging within loops can help track progress and the values being
+ processed.
+ Identify Inputs and Outputs: Look for points where the application interacts with user inputs, configuration
+ settings, or external data sources. Logging inputs and outputs can help track data transformations and ensure that
+ inputs are correctly processed.
+ Identify Troubleshooting Points: Consider where troubleshooting or debugging might be necessary in the future.
+ These might be areas prone to errors or complex logic that might require detailed inspection.
+ Identify User Actions: If the application involves user interactions, consider logging user actions or events that help
+ you understand how users are interacting with the software.
+ Consider Performance Monitoring: If performance is a concern, consider logging timing information to analyze
+ the execution time of different components and identify potential bottlenecks.
+ Consult Documentation and Comments: Review any existing documentation, comments, or architectural diagrams
+ that provide insights into the application's structure and behavior.
+ Brainstorm with Stakeholders: Discuss potential logging points with other developers, stakeholders, or users of the
+ application. They might provide valuable insights into where logging would be most beneficial.
+ Think Like a Debugger: Put yourself in the shoes of someone who needs to debug the application. Where would 
+you look for information to understand why something went wrong or to verify that everything is working as 
+expected?
+ Once you've identified potential places for logging, you can strategically insert logging statements at these points.
+ Remember to vary the logging levels (e.g., DEBUG, INFO, WARNING, ERROR, CRITICAL) based on the
+ importance of the information being logged. Regularly reviewing and adjusting your logging strategy as the
+ application evolves is crucial for maintaining effective and relevant logs.
+ Task- Find the potential places of logging write modules potential places in each module where you need of logging.
+ Create a dummy code for your project. Every member in the project will select minimum two function and
+ implement dummy code of that function with logging implementation.
+ 25 | P a g e
+LAB Assignment 11 : Data Analysis
+ You are working for a large e-commerce platform, and your task is to perform customer segmentation based on their
+ shopping behavior. You have access to a dataset containing information about customer transactions. The dataset is 
+in a CSV format and contains the following columns:
+ 1. CustomerID: Unique identifier for each customer.
+ 2. TotalAmountSpent: The total amount spent by each customer on the platform.
+ 3. TotalItemsPurchased: The total number of items purchased by each customer.
+ 4. LastPurchaseDate: The date of the customer's most recent purchase.
+ 5. AveragePurchaseValue: The average value of each customer's purchases. Using NumPy and Pandas, your 
+goal is to perform the following tasks:
+ 1. Data Loading: Load the dataset into a Pandas DataFrame for analysis.
+ 2. Data Cleaning: Check for missing values, duplicates, or any inconsistencies in the data. If found, clean the
+ data appropriately.
+ 3. Descriptive Statistics: Calculate basic statistics such as mean, median, and standard deviation of
+ TotalAmountSpent and TotalItemsPurchased.
+ 4. Customer Segmentation: Divide the customers into segments based on their shopping behavior. You can use 
+techniques like K-means clustering or any other method you prefer. For example, you might create segments like 
+"High Spenders," "Frequent Shoppers," and "Inactive Customers."
+ 5. Visualization: Create visualizations (e.g., scatter plots, bar charts) to represent the different 
+customer segments you've identified.
+ 6. Customer Insights: Provide insights into each customer segment. What distinguishes one segment from another?
+ How can the e-commerce platform tailor its marketing strategies for each segment?
+ 7. Customer Engagement Recommendations: Based on your analysis, provide recommendations for the e- 
+commerce platform on how to engage with each customer segment more effectively. For example, should they 
+offer discounts, provide personalized product recommendations, or run targeted marketing campaigns?
+ This problem requires you to use Pandas for data manipulation, NumPy for numerical operations, and potentially 
+machine learning libraries for customer segmentation. It showcases the power of data analysis and segmentation for
+ making data-driven decisions in e-commerce.
+ DataSet for the above analysis- https://www.kaggle.com/datasets/puneetbhaya/online-retail/ 
+Dataset contains following information 
+Description
+ Quantity
+ InvoiceDate
+ UnitPrice
+ CustomerID
+ Country
+ 26 | P a g e
+Lab Assignment 12 : Household Expenses Tracker
+ You have been tasked with creating a Python program to help manage household expenses. The
+ program should allow family members to input their daily expenses, store them in a CSV file, and
+ provide functionalities for analysis and reporting.
+ 1. Expense Logging: Create a Python program that allows users to input their daily expenses.
+ The program should prompt the user for their name, date of the expense, description, and
+ amount spent. The data should be stored in a CSV file named expenses.csv with columns
+ 'Name', 'Date', 'Description', and 'Amount'.
+ 2. Expense Analysis: Develop a function that reads the expenses.csv file and calculates the total
+ expenses for each family member. Display the total expenses for each member along with the
+ average daily expense for the household.
+ 3. Expense Trends: Implement a feature that generates a line chart using a plotting library (e.g.,
+ Matplotlib) to visualize the expense trends over the last month. The x-axis should represent
+ the dates, and the y-axis should show the cumulative expenses for each day.
+ 4. Expense Categorization: Enhance the program to allow users to categorize their expenses.
+ Prompt the user to assign a category (e.g., groceries, utilities, entertainment) to each expense
+ entry. Update the CSV file to include a 'Category' column.
+ 5. Expense Reporting: Create a monthly expense report by reading the data from expenses.csv
+ and generating a report that includes the following:
+  Total expenses for each family member for the month.
+  A breakdown of expenses by category.
+  A comparison of monthly expenses over different months using bar charts.
+ 6. Expense Budgeting: Add an option for users to set a monthly budget for each category. After
+ entering expenses, the program should calculate the remaining budget for each category and
+ provide a warning if the budget is exceeded.
+ 7. Data Backup and Restore: Implement a backup and restore feature that allows users to save a
+ copy of the expenses.csv file to a backup location and restore it if needed. Handle cases where
+ the file might be missing or corrupted.
+ Output:

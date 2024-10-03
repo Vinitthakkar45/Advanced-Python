@@ -1,0 +1,6 @@
+2024-09-23 18:33:48,923  - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "c:\Semester 5\Adv Python\Test\Zip-os\log1.py", line 17, in <module>
+    a = 10/0
+        ~~^~
+ZeroDivisionError: division by zero

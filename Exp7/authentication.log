@@ -1,0 +1,8 @@
+INFO:root:Sign Up successful for username : saad
+INFO:root:Sign In successful for username : saad
+ERROR:root:Invalid choice. Please try again.
+ERROR:root:Username cannot contain spaces. Please try again.
+ERROR:root:Invalid username or password for username : saad
+ERROR:root:Username already exists. Please try again.
+ERROR:root:Invalid choice. Please try again.
+ERROR:root:Invalid choice. Please try again.

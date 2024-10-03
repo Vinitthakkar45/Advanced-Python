@@ -1,0 +1,6 @@
+{"country" : "India",
+"date" : "2020-03-26",
+"confirmed_cases" : {"total" : 1000, "new" : 100},
+"deaths" : 50,
+"recovered" : 100
+}

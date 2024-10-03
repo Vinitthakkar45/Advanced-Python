@@ -1,0 +1,7 @@
+Total reviews processed: 51
+Total valid reviews: 40
+Total invalid reviews: 11
+Top 3 products with highest average ratings:
+P2222334455: 5.00
+P3999001122: 5.00
+P3222334455: 4.50
