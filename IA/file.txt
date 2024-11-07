@@ -1,9 +1,0 @@
-(c) Microsoft Corporation. All rights reserved.
-
-C:\Semester 5\Adv Python\IA>python -u "c:\Semester 5\Adv Python\IA\test.py"(c) Microsoft Corporation. All rights reserved.
-
-C:\Semester 5\Adv Python\IA>python -u "c:\Semester 5\Adv Python\IA\test.py"(c) Microsoft Corporation. All rights reserved.
-
-C:\Semester 5\Adv Python\IA>python -u "c:\Semester 5\Adv Python\IA\test.py"(c) Microsoft Corporation. All rights reserved.
-
-C:\Semester 5\Adv Python\IA>python -u "c:\Semester 5\Adv Python\IA\test.py"
